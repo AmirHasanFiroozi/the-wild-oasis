@@ -1,17 +1,19 @@
-/*
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-  rel="stylesheet"
-/>
-<link
-  href="https://fonts.googleapis.com/css2?family=Sono:wght@400;500;600&display=swap"
-  rel="stylesheet"
-/>
-*/
+import { createGlobalStyle } from "styled-components";
 
-/* Colors adapted from https://tailwindcss.com/docs/customizing-colors */
+const GeneralStyle = createGlobalStyle`
+    
+@font-face {
+    font-family: 'Poppins';
+    src:
+    local('Poppins'),
+    local('poppins'),
+    url('../assets/font/Poppins-Medium.ttf') format('truetype'), 
+    url('../assets/font/Poppins-Medium.woff2') format('woff2'),
+        url('../assets/font/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 
 :root {
   /* Indigo */
@@ -194,3 +196,6 @@ FOR DARK MODE
 --image-grayscale: 10%;
 --image-opacity: 90%;
 */
+`
+
+export default GeneralStyle ;
